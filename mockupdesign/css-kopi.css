@@ -1,0 +1,472 @@
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+}
+body{
+background-image: url(pictures/background_image.jpg);*/
+/*background-color:dimgrey;*/
+    margin: 20px;
+
+}
+
+@media screen and (max-width:959px){
+    #container {
+        width: 100%;  
+    }
+    #left-column {
+        width: 220px;
+    }   
+    #right-column {
+        width: 60%;
+        margin-left: 3%;
+    }
+    #banner {
+width: 99.9%;
+    }
+    #ulbar {
+        width: 75%;
+    }
+    #footer {
+        width: 99.9%;
+    }
+    #open {
+        width: 93%;
+    }
+    #openh {
+         width: 50%;
+        font-size: 14px;
+        left: 14px;
+    }
+    #opent {
+        width: 100%;
+        font-size: 12px;
+        right:  8px;
+    }
+}
+@media screen and (max-width:640px){
+    #container {
+        width: 100%;  
+    }
+    #left-column {
+        width: 100%;
+        height: 200px; 
+    }
+    #right-column {
+        position: relative;
+        width: 320px;
+        right: 10px;
+
+        height: 200px;
+
+    }
+    #banner {
+        width: 100%;
+    }
+    #ulbar {
+        width: 80%;
+        height: 100px;
+
+
+    }
+    #footer {
+        width: 100%;
+    }
+    #open {
+        width:50%;
+    }
+    #openh {
+        width: 25%;
+        left: -40px;
+        font-size: 10px;
+        bottom: 8px;
+        
+
+    }
+    #opent {
+        width: 70%;
+        font-size: 6px;
+        text-align: left;
+        left: 60px;
+        top: -61px;
+        height: 30px;
+    }
+    #open {
+        height: 50px;
+        width: 90%;
+    }
+    .li-1 {
+        font-size: 10px;
+        right: 15px;
+        display: inline;
+        margin-left: 20px;
+        top: 40px;
+    }
+}
+@media screen and (max-width:640px){
+#container {
+        width: 320px;  
+    }}
+
+#container {
+    /*background-image: url(pictures/banner12-kopi.jpg);*/
+    /*background-color: grey;*/
+    background-color: wheat;
+    height: 655px;
+    width: 1000px;
+    position: relative;
+    left: 200px;
+    z-index: 101;
+    border-radius: 16px;
+}
+#divlogo{
+    
+}
+#logo{
+    position: relative;
+    height: 200px;
+    z-index: 102;
+    left: 0px;
+    top: -20px;
+    width: 200px;
+
+
+}
+#div_hozinotal_banner{
+
+    position: relative;
+    height: 150px;
+    z-index: 101;
+    width: 1000px;
+    top: -200px;
+    
+}
+#hozinotal_banner{
+    width: 1200px;
+    height: 200px;
+    position: relative;
+    left: -100px;
+    top: -10px;
+}
+#div_vertikal_banner{
+    position: relative;
+    height: 600px;
+    z-index: 101;
+    width: 250px;
+    bottom: 350px;
+}
+#vertikal_banner{
+    position: relative;
+    height: 650px;
+    width: 400px;
+    left: -75px;
+    z-index: 101;
+
+
+}
+#div_velkommen {
+
+}
+#velkommen {
+    color: white;
+    position: relative;
+    font-size: 52px;
+    bottom: 960px;
+    left: 300px;
+    width: 600px;
+    padding: 10px;
+    z-index: 103;
+    font-family: "Bodoni 72 Smallcaps";
+    font-style: italic;
+
+}
+#div_menu{
+   
+}
+#menu {
+    z-index: 102;
+    top: 175px;
+    position: absolute;
+    width: 250px;
+    left: -50px;
+}
+#menu ul {
+    list-style: none;
+}
+#menu ul li {
+    width: 200px;
+    text-align: center;   
+    border-radius: 60px;
+    font-size: 12px;
+}
+#menu ul li a {
+    color:white;
+    text-decoration: none;  
+    font-family: "Bodoni 72 Smallcaps";
+    font-size: 28px;
+}
+#menu ul :hover {
+    background-color: rgb(128,87,63);  
+    width: 200px;
+    border-radius: 4px;
+}
+#div_open{
+    width: 200px;
+}
+#open{
+    color: white;
+    position: relative;
+    bottom: 750px;
+    z-index: 103;
+    text-align: center;
+    font-size: 28px;
+    left: -10px;
+    
+}
+#open_ul{
+    list-style: none;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    left: -40px;
+    top: -70px;
+    color:;
+    font-family: "serif";
+    width: 200px;
+
+    
+}
+#hr1 {
+    position: relative;
+    width: 200px;
+    z-index: 103;
+    bottom: 750px;
+    left: -10px;
+
+
+
+}
+#text_open {
+     font-family: "Bodoni 72 Smallcaps";
+    font-size: 28px;
+}
+#hr5 {
+    position: relative;
+    bottom: 20px;
+    z-index: 104;
+    color: green;
+}
+#hr6 {
+    position: relative;
+    bottom:80px;
+    z-index: 104;
+    color: green;
+}
+#div_footer{
+    width: 1000px;
+    position: relative;
+    height: 65px;
+    bottom: 835px;
+    border-radius: 16px;
+
+}
+#follow {
+    color: white;
+    position: relative;
+    font-size: 20px;
+    font-family: "Bodoni 72 Smallcaps";
+    top: -90px;
+    left: 710px;
+    z-index: 103;
+    width: 160px;
+
+}
+.icon{
+    position: relative;
+    left: 885px;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    z-index: 103;
+}
+#icon_background{
+      position: absolute;
+    left: 650px;
+    width: 400px;
+    top: 565px;
+    z-index: 102;
+}
+#icon_background2{
+      position: absolute;
+    left: 250px;
+    width: 470px;
+    top: 560px;
+    z-index: 101;
+}
+#icon_background3{
+      position: absolute;
+    left: -50px;
+    width: 450px;
+    top: 565px;
+    z-index: 101;
+}
+#mail {
+    position: absolute;
+    height: 45px;
+    top:15px;
+    left: 0px;
+     z-index: 102;
+}
+#email {
+    position: absolute;
+    height: 50px;
+    top: 10px;
+    left: 50px;
+    font-size: 18px;
+    font-family: "Bodoni 72 Smallcaps";
+    color: white;
+     z-index: 102;
+}
+#telefon {
+    position: absolute;
+    height: 50px;
+    top: 5px;
+    left: 300px;
+     z-index: 102;
+}
+#telefonnr {
+    position: absolute;
+    bottom: -28px;
+    left: 340px;
+    font-size: 20px;
+    font-family: "Bodoni 72 Smallcaps";
+    color: black;
+    z-index: 102;
+    text-align: center;
+}
+#find  {
+    position: absolute;
+    bottom: -50px;
+    left: 450px;
+    font-size: 24px;
+    font-family:sans-serif;
+    color: black;
+    z-index: 102;
+}
+#eller {
+    position: absolute;
+    bottom: -28px;
+    left: 340px;
+    font-size: 20px;
+    font-family: "Bodoni 72 Smallcaps";
+    color: black;
+    z-index: 102;
+    text-align: center;
+}
+#bo {
+    position: absolute;
+    bottom: -30px;
+    left: 520px;
+    font-size: 30px;
+    font-family: "Bodoni 72 Smallcaps";
+    color: black;
+    z-index: 102;
+    text-align: center;
+}
+#bo a {
+    text-decoration: none;
+}
+#bo a p {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 18px;
+}
+#bo a  :hover {
+    background-color: rgb(128,87,63);  
+}
+
+#icon_backgroundmidt{
+    position: absolute;
+    left: 50px;
+    width: 1000px;
+    top: 140px;
+    height: 200px;
+    z-index: 100;
+}
+#sektion{
+    position: absolute;
+    left: 150px;
+    width: 850px;
+    top: 140px;
+    height: 450px;
+    z-index: 100;
+background-color: burlywood;
+    opacity: ;
+}
+
+#hilsen {
+    color: rgb(128,87,63);
+    position: relative;
+    font-size: 28px;
+    bottom: 0px;
+    left: 50px;
+    width: 780px;
+    padding: 10px;
+    z-index: 106;
+    font-family: "Bodoni 72 Smallcaps";
+    text-align: center;
+    font-weight: bolder;
+    text-align: center;
+    background-color: wheat;
+
+
+}
+#hilsens {
+    color: rgb(128,87,63);
+    position: relative;
+    font-size: 28px;
+    bottom: 40px;
+    left: 50px;
+    width: 780px;
+    padding: 10px;
+    z-index: 106;
+    font-family: "Bodoni 72 Smallcaps";
+    text-align: center;
+    font-weight: bolder;
+    text-align: center;
+    background-color: white;
+    height: 0px;
+
+
+}
+
+#map{
+    position: absolute;
+    top: -400px;
+    z-index: 106;
+    width: 300px;
+    left: 450px;
+    height: 5400px;
+}
+
+
+#hyt {
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    width: 300px;
+    height: 400px;
+    background-color: aqua;
+}
+
+
+
+
+
+#section_gallery p {
+    color: white;
+    
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>fadezone-prototype1</title>
+
+  <style type="text/css">
+    p, body, td { font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 10pt; }
+    body { padding: 0px; margin: 0px; background-color: #ffffff; }
+    a { color: #1155a3; }
+    .space { margin: 10px 0px 10px 0px; }
+    .header { background: #003267; background: linear-gradient(to right, #011329 0%,#00639e 44%,#011329 100%); padding:20px 10px; color: white; box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75); }
+    .header a { color: white; }
+    .header h1 a { text-decoration: none; }
+    .header h1 { padding: 0px; margin: 0px; }
+    .main { padding: 10px }
+  </style>
+
+  <!-- DayPilot library -->
+  <script src="js/daypilot/daypilot-all.min.js"></script>
+
+</head>
+<body>
+<div class="header">
+  <h1>fadezone-prototype1</h1>
+  <div><a href="https://javascript.daypilot.org/">DayPilot for JavaScript</a> - HTML5 Calendar/Scheduling Components for JavaScript/Angular/React</div>
+</div>
+
+<div class="main">
+  <div id="dp"></div>
+</div>
+
+<script>
+  var dp = new DayPilot.Calendar("dp", {
+    locale: "da-dk",
+    viewType: "Week",
+    headerDateFormat: "dddd",
+    crosshairType: "Disabled",
+    eventArrangement: "Full",
+    timeRangeSelectedHandling: "Enabled",
+    onTimeRangeSelected: function (args) {
+      DayPilot.Modal.prompt("Create a new event:", "Event 1").then(function(modal) {
+        var dp = args.control;
+        dp.clearSelection();
+        if (!modal.result) { return; }
+        dp.events.add(new DayPilot.Event({
+          start: args.start,
+          end: args.end,
+          id: DayPilot.guid(),
+          text: modal.result
+        }));
+      });
+    },
+    eventDeleteHandling: "Disabled",
+    eventMoveHandling: "Update",
+    onEventMoved: function (args) {
+      this.message("Event moved: " + args.e.text());
+    },
+    eventResizeHandling: "Update",
+    onEventResized: function (args) {
+      this.message("Event resized: " + args.e.text());
+    },
+    eventClickHandling: "Disabled",
+    eventHoverHandling: "Disabled",
+  });
+  dp.events.list = [
+    {
+      id: "1",
+      start: DayPilot.Date.today().addHours(10),
+      end: DayPilot.Date.today().addHours(12),
+      text: "Event 1"
+    }
+  ];
+  dp.init();
+</script>
+
+</body>
+</html>
